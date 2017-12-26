@@ -7,7 +7,8 @@
     });
 
     clipboard.on('error', function(e) {
-        layer.hAlert("长按复制",1);
+        window.prompt("请手动复制以下内容", e.text)
+        //layer.hAlert("长按复制",1);
     });
 
 clipboard.js
